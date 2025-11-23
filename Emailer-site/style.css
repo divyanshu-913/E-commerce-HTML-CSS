@@ -1,0 +1,334 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.navigation ul li {
+  float: left;
+  list-style: none;
+}
+
+.navigation {
+  text-align: center;
+  /* width: 100%; */
+  float: left;
+}
+.navigation ul li a {
+  padding: 4px 162px 0px 0px;
+}
+.navigation ul li:nth-child(5) a {
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+
+/* .container 
+  {
+    width: 100%;
+    max-width: 1400px;
+    background: #fff;
+    overflow: hidden;
+    padding-bottom: 0.5px;
+  } */
+
+ 
+
+.nav-bar,.nav-bar2 {
+  display: flex;
+  min-width: 500px;
+  justify-content: space-evenly;
+}
+
+a,p {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: large;
+  color: black;
+  line-height: 0.5px;
+}
+
+header {
+  padding-top: 5px;
+  display: flex;
+  background-color: #ffff;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo.container {
+  padding-top: 5px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.image-contain {
+  border: 1px solid rgb(253, 251, 251);
+  margin: 9px auto;
+  background-color: yellowgreen;
+  background-image: url(/images/BANNER.jpg);
+  background-repeat: no-repeat;
+  height: 505px;
+  background-size: cover;
+  position: relative;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: rgb(129, 82, 82);
+  text-align: center;
+  z-index: 2;
+}
+
+.new-arrival {
+  font-size: 3.5rem; /* Bigger text for NEW ARRIVAL */
+  margin-bottom: 10px; /* Reduced space between text and button */
+  font-weight: bold;
+}
+
+.btn {
+  background: #333;
+  color: #fff;
+  padding: 3px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.btn:hover {
+  background: #2f2525;
+}
+
+/* Product Section */
+.products {
+  padding: 0px 0px;
+  line-height: 0.5rem;
+  text-align: center;
+  font-size: x-large;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product img {
+  width: 345px;
+  height: 345px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.product span {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0;
+}
+
+/* About Section */
+.about {
+  position: relative;
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.about-image {
+  border: 1px solid rgb(253, 251, 251);
+  margin: 50px auto;
+  background-color: yellowgreen;
+  background-image: url(/images/About.jpg);
+  background-repeat: no-repeat;
+  height: 700px;
+  background-size: cover;
+  position: relative;
+}
+
+.about-overlay {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  color: rgb(129, 82, 82);
+  text-align: left;
+  z-index: 2;
+  width: 40%;
+  max-width: 500px;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.foot {
+  height: 60px;
+  width: 100%;
+  background: #ecc893;
+}
+
+.footer {
+  height: 150px;
+  background-color: rgb(236, 200, 147);
+  text-align: center;
+}
+
+.footer .promote-section h3 {
+  padding-top: 80px;
+  color: white;
+}
+
+.footer .social-icons {
+  margin-top: 20px;
+  width: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer .social-icons a img {
+  width: 30px; /* Equal icons */
+  height: 30px;
+}
+
+.footer .promote-section .social-icons a {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.description {
+  max-width: 800px;
+  margin: 16px auto 16px auto;
+  text-align: center;
+  padding: 0 20px;
+  line-height: 1.5;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+
+.toggle{
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+#mo-logo{
+  display: none;
+}
+
+
+
+/* Responsive Navigation CSS */
+
+
+@media (max-width: 768px) {
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  
+  #mo-logo {
+    display: inline-block;
+  }
+ 
+  
+  .navigation ul {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;   /* header ke neeche */
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    border-radius: 5px;
+
+    z-index: 9999;
+  }
+ 
+  /* Show nav when active */
+  .navigation.active ul {
+    display: flex;
+  }
+ 
+  .navigation ul li {
+    margin: 10px 0;
+    text-align: right;
+  }
+ 
+  .navigation ul li a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+  }
+ 
+  /* Toggle button right side */
+  .toggle {
+    display: block;
+    margin-left: auto; /* Push to right */
+    cursor: pointer;
+  }
+ 
+  .toggle button {
+    background: #000000;
+    border: none;
+    padding: 8px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+  }
+}
+.navigation.active ul li a img {
+  display: none;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emailer</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="navigation" id="navigation">
+          <a id="mo-logo" href="#">
+            <img src="./images/logo.png" alt="" width="30" height="30"/>
+          </a>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#"><img src="./images/logo.png" alt="" width="40" height="40" /></a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="toggle" id="toggle">
+          <button>☰</button>
+        </div>
+      </div>
+    </header>
+ 
+    <section class="container">
+      <div class="image-contain">
+        <div class="centered">
+          <h1 class="new-arrival">NEW ARRIVAL</h1>
+          <button class="btn">VIEW MORE →</button>
+        </div>
+      </div>
+    </section>
+ 
+    <h2>Welcome Back User!</h2>
+ 
+    <section class="products">
+      <div class="product-list">
+        <div class="product">
+          <img src="images/shirt.webp" alt="Product 1" />
+          <p>Polycotton Colorblock Shirt Fabric</p>
+          <p>64% off <del>650</del> ₹229</p>
+          <button class="btn">BUY NOW</button>
+        </div>
+        <div class="product">
+          <img src="images/WhatsApp Image 2025-09-01 at 2.10.02 PM.jpeg" alt="Product 2" />
+          <p>Men's Blue Check Shirt Cotton</p>
+          <p>73% off <del>1299</del> ₹380</p>
+          <button class="btn">BUY NOW</button>
+        </div>
+        <div class="product">
+          <img src="images/jeans2.webp" alt="Product 3" />
+          <p>Comfort Fit Washed Jeans</p>
+          <p>15% off <del>1799</del> ₹1699</p>
+          <button class="btn">BUY NOW</button>
+        </div>
+      </div>
+      <br>
+      <div class="description">
+        The expansive collection of products available on this online store ensures that your required items are only just a few clicks away. Shopsy has a wide selection of over fifteen crore product listings.
+      </div>
+    </section>
+ 
+    <!-- About Section -->
+    <section>
+      <div class="about-image">
+        <div class="about-overlay">
+          <h2 class="about-heading">ABOUT OUR PRODUCT</h2>
+          <div class="about-text">
+            Menswear Founded on Fit, Built on Service, and Focused on Style. However You
+          </div>
+          <button class="btn">VIEW MORE</button>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="promote-section">
+        <h3> FOLLOW US ON </h3>
+        <div class="social-icons">
+          <a href="#"><img src="/images/Facebook icon.png" alt="Facebook" /></a>
+          <a href="#"><img src="/images/mdi_instagram (1).png" alt="Instagram" /></a>
+          <a href="#"><img src="/images/mdi_youtube.png" alt="YouTube" height="25" /></a>
+        </div>
+      </div>
+    </footer>
+    <div class="foot"></div>
+ 
+    <script>
+      const toggleBtn = document.getElementById("toggle");
+      const navList = document.getElementById("navigation");
+ 
+      toggleBtn.addEventListener("click", () => {
+        navList.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html
